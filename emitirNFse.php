@@ -131,7 +131,7 @@ if ($_GET['action']=='consultaNFSe')
  
 	 ///// TOMADOR
 	 $layoutTomador .=  '<tr><td><b>Tipo</b></td><td>'
-	 .traduzTipoTomador($nota->Nfse->DadosNfse->TomadorTipo).'</td></tr>';
+	 .getTipoTomador($nota->Nfse->DadosNfse->TomadorTipo).'</td></tr>';
 	 $layoutTomador .=  '<tr><td><b>CPF/CNPJ</b></td><td>'
 	 .$nota->Nfse->DadosNfse->TomadorCpfCnpj.'</td></tr>';
 	 $layoutTomador .=  '<tr><td><b>Razão Social</b></td><td>'
@@ -152,7 +152,7 @@ if ($_GET['action']=='consultaNFSe')
 	 ///// Dados da nota
 	 //Situação
 	 $layoutNota .= '<tr><td><b>Situação:</b></td><td>'
-	 .traduzSituacaoTribNFSe($nota->Nfse->DadosNfse->Situacao).'('.$nota->Nfse->DadosNfse->Situacao.')</td></tr>';
+	 .getSituacaoTribNFSe($nota->Nfse->DadosNfse->Situacao).'('.$nota->Nfse->DadosNfse->Situacao.')</td></tr>';
 	 // Valor Serviços
 	 $layoutNota .= '<tr><td><b>Valor Serviços:</b></td><td>'
 	 .$nota->Nfse->DadosNfse->ValorServicos.'</td></tr>';
